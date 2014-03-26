@@ -6,16 +6,13 @@
             width     : '600px',
             height    : '400px',
             border    : '0px solid black',
-            animation : {},
-            description : {}
+            animation : {}
         }, customSettings);
         return this.each(function(){
-//-----------------------[The Globals!]--------------------//
+//-------------[The Globals!]--------------------//
               $this = $(this),
               $thisImg = $this.children('img').first(),
               $nextImg = $thisImg.next();
-              $allImg = $thisImg.siblings();
-//--------------------------------------------------------//
             $this.css({
                 'position' : 'relative',
                 'border'   : settings.border,
@@ -41,7 +38,6 @@
                     }
              });
              settings.animation();
-             settings.description();
         });
     };
 }(jQuery));
@@ -51,7 +47,6 @@
                      $nextImg.css('z-index', '99');
                      $thisImg = $nextImg;
                      $nextImg = ($thisImg.next().index() >= 0)? $thisImg.next() : $this.children('img').first();
-                     
                      $nextImg.css({
                          'position' : 'absolute',
                          'top'      : '0px',
@@ -71,7 +66,6 @@
                  });
              },settings.duration);
     });
-
     var toggle = (function(){setInterval(function(){
                  $thisImg.animate({
                      width  : '0',
@@ -82,7 +76,6 @@
                      $nextImg.css('z-index', '99');
                      $thisImg = $nextImg;
                      $nextImg = ($thisImg.next().index() >= 0)? $thisImg.next() : $this.children('img').first();
-                     
                      $nextImg.css({
                          'position' : 'absolute',
                          'top'      : '0px',
