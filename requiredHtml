@@ -1,0 +1,10 @@
+<body>
+  <div id="slider">
+      <img src="pics/1.JPG" title="">
+      <img src="pics/2.JPG" title="">
+      <img src="pics/3.JPG" title="">
+      <img src="pics/4.JPG" title="">
+      <img src="pics/5.JPG" title="">
+  </div>
+  <script src="path/to/jquery.js"></script>
+</body
