@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#slider").slide({
+      duration  : 4400, // <-- default (optional)
+      aniTime   : 1000, // <-- default (optional)
+      width     : '600px', // <-- default (optional)
+      height    : '400px', // <-- default (optional)
+      border    : '0px solid black', // <-- default (optional)
+      animation: toggle //poof, swipe, toggle
+    });
+});
