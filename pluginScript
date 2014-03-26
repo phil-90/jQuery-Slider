@@ -1,3 +1,8 @@
+/*!
+ * jQuery-Slider Plugin
+ * Documentation at: https://github.com/phil-90/jQuery-Slider/tree/master
+ * 2013-2014 P. King
+ */
 (function($){
     $.fn.slide = function(customSettings){
         settings = $.extend({
